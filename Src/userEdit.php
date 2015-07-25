@@ -3,11 +3,14 @@
     include_once "conn/conn.php";
 	include_once 'class/User.php';
 	include_once 'config.php';
-	include "ifLogin.php";
+	include "userIfLogin.php";
 	
 	$user = new User();
     $user = unserialize($_SESSION['member']);
 	
+	$QQ = "";
+	$telephone = "";
+    $email = "";
 	$username = $user->getUsername();
 	$QQ = $user->getQQ();
     $email=	$user->getEmail();
@@ -21,7 +24,9 @@
         $sql = "update users set password = ".$password.",email = '".$Email."',
 	            telephone = '".$tel."',QQ = '".$QQ."'
 	            where username = '".$username."';";
-        $rst = $conn->Execute($sql) or die('execute error');			  
+        $rst = $conn->Execute($sql) or die('execute error');	
+		$newuser = new USer($username,$password,$QQ,$Email,$tel);
+		$_SESSION['member'] = serialize($newuser);
 	    echo "<script language='javascript'> 
 		      alert('修改成功');
 		      location.replace('userCenter.php');
@@ -29,9 +34,6 @@
           }
 
 	$smarty->assign('user',$username);
-	$smarty->assign('QQ',$QQ);
-	$smarty->assign('telephone',$telephone);
-	$smarty->assign('email',$email);
 	$smarty->display('header.tpl');
     $smarty->display('editUser.tpl');
 	$smarty->display('faster.tpl');

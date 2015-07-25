@@ -16,7 +16,7 @@
             <br/>
           </section>
         </div>
-		<form id="login" name="login" method="post" action="chkuser.php">
+		<form id="login" name="login" method="post" action="userLoginChk.php">
           <section class="returncustomer">
             <h2 class="heading2">登陆</h2>
             <div class="loginbox">
@@ -34,11 +34,11 @@
                       <input type="password"  name="password" type="password" class="span3">
                     </div>
                   </div>
-                  <a class="" href="resetPassword.php">忘记密码?</a>
+                  <a class="" href="userPasswordReset.php">忘记密码?</a>
                   <br>
                   <br>
                   <div align=right>
-                  <a href="register.php" class="btn btn-orange">注册</a>&nbsp;
+                  <a href="userRegister.php" class="btn btn-orange">注册</a>&nbsp;
                   <input id="enter"  class="btn btn-orange" name="enter" type="submit" value="登陆">
                 </div>
                 </fieldset>

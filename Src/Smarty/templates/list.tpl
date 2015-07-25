@@ -6,7 +6,7 @@
                   
                   <a href="#"><img alt="" src="{$picpath}"></a>
                   <div class="pricetag">
-                    <span class="spiral"></span><a href="showObject.php?id={$oid}" class="productde">商品详情</a>
+                    <span class="spiral"></span><a href="objectShow.php?id={$oid}" class="productde">商品详情</a>
                     <div class="price">
                       <div class="pricenew">￥{$price}</div>
                       
@@ -24,7 +24,7 @@
 		 <td height="20"><div align="center">{$price}</div></td>
 		 <td height="20"><div align="center"><img src="{$picpath}" /></div></td>
 		 <td height="20"><div align="center">
-		      <a href="showObject.php?id={$oid}"><input type="button" value="Go!"/></button>
+		      <a href="objectShow.php?id={$oid}"><input type="button" value="Go!"/></button>
 			  </a></div>
 		 </td>
         </tr> -->

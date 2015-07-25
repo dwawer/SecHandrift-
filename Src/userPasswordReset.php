@@ -31,7 +31,7 @@
             <h1 class='heading2'><span style='font-size:40px'>请输入邮箱</span></h1>
             <br/><br/><br/>
           </section>
-        </div><form name='contactForm' method='post' action='resetPassword.php'>
+        </div><form name='contactForm' method='post' action='userPasswordReset.php'>
 		             <br/><br/><br/>
 		             <input name='mail' type='text' />
 		             <input name='submit' class='btn btn-orange' type='submit' value='Submit' />

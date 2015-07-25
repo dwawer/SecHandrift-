@@ -3,7 +3,7 @@
 	include_once 'config.php';
     include_once 'class/Objlist.php';
 	include_once 'conn/conn.php';
-	//include "ifLogin.php";
+	//include "userIfLogin.php";
 	
 	//global $Smarty;
 	$search = $_POST['searchbox'];
@@ -24,9 +24,7 @@
           <div class='container'>
 		     <div class='row'><aside class='span3'>";
 		 $smarty->display('category.tpl');
-	//	   $smarty->display('floatsed.tpl');
-	//	   $smarty->display('floatdrift.tpl');
-		   include 'newlist.php';
+		   include 'objectNewlist.php';
 	       $smarty->display('newlist.tpl');
     echo "</aside>";
 	echo " <div class='span9'>          
@@ -47,11 +45,9 @@
 		   $arr1 = $rst->getArray();
 		   $objlist = new objlist(6,$page);
 		   $objlist->listInfo($arr1);
-		   $objlist->toPage();
+	//	   $objlist->toPage();
 	  }	
 	
 	 echo "</ul></div></div></section></div></div></div></section></div>";
 	 $smarty->display('faster.tpl');
-	 echo $page;
-	 echo $_GET['page'];
 ?>

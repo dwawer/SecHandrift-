@@ -11,13 +11,14 @@
 	   
 	public function __construct($pagesize,$page)
 	{
-	   $this->pagesize=9;
+	   $this->pagesize=999;
 	   $this->page=$page;
 	} 
 	
 	public function listInfo($infoall)
 	{
 		global $smarty;
+		$this->page = $_GET['page'];
 	    if($this->page=="" || !is_numeric($this->page))
 	    {
 	      $this->page=1;
@@ -60,7 +61,7 @@
 			  $smarty->assign('class',$value['class']);
 			  $smarty->assign('price',$value['price']);
 			  if($value['picture'] == "")
-				  $smarty->assign('picpath','img/default.jpg');
+				  $smarty->assign('picpath','static/img/default.jpg');
 			  else 
 			      $smarty->assign('picpath',$value['picture']);
 			  $smarty->assign('oid',$value['O_id']);

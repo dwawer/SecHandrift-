@@ -2,7 +2,7 @@
     session_start();
 	include_once 'config.php';
 	include_once 'conn/conn.php';
-	include "ifLogin.php";
+	include "userIfLogin.php";
 	
 	$user = new User();
     $user = unserialize($_SESSION['member']);

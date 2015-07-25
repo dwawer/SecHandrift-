@@ -9,7 +9,7 @@
                   
                   <a href="#"><img alt="" src="static/img/keyboard.jpg"></a>
                   <div class="pricetag">
-                    <span class="spiral"></span><a href="#" class="productde">商品详情</a>
+                    <span class="spiral"></span><a href="objectShow.php?id=47" class="productde">商品详情</a>
                     <div class="price">
                       <div class="pricenew">￥19.90</div>
                       
@@ -23,7 +23,7 @@
                   
                   <a href="#"><img alt="" src="static/img/keyboard.jpg"></a>
                   <div class="pricetag">
-                    <span class="spiral"></span><a href="#" class="productde">商品详情</a>
+                    <span class="spiral"></span><a href="objectShow.php?id=47" class="productde">商品详情</a>
                     <div class="price">
                       <div class="pricenew">￥19.90</div>
                       
@@ -37,7 +37,7 @@
                  
                   <a href="#"><img alt="" src="static/img/keyboard.jpg"></a>
                   <div class="pricetag">
-                    <span class="spiral"></span><a href="#" class="productde">商品详情</a>
+                    <span class="spiral"></span><a href="objectShow.php?id=47" class="productde">商品详情</a>
                     <div class="price">
                       <div class="pricenew">￥19.90</div>
                       
@@ -51,7 +51,7 @@
                   
                   <a href="#"><img alt="" src="static/img/xiyiji.jpg"></a>
                   <div class="pricetag">
-                    <span class="spiral"></span><a href="#" class="productde">商品详情</a>
+                    <span class="spiral"></span><a href="objectShow.php?id=45" class="productde">商品详情</a>
                     <div class="price">
                       <div class="pricenew">￥100.00</div>
                       
@@ -60,10 +60,10 @@
                 </div>
               </li>
               <li class="span3">
-                <a class="prdocutname" href="product.html">新鲜荔枝</a>
+                <a class="prdocutname" href="product.html">二手单车</a>
                 <div class="thumbnail">
                   
-                  <a href="#"><img alt="" src="static/img/lychee.jpg"></a>
+                  <a href="#"><img alt="" src="static/img/bike.jpg"></a>
                   <div class="pricetag">
                     <span class="spiral"></span><a href="#" class="productde">商品详情</a>
                     <div class="price">
@@ -73,10 +73,10 @@
                 </div>
               </li>
               <li class="span3">
-                <a class="prdocutname" href="product.html">新鲜荔枝</a>
+                <a class="prdocutname" href="product.html">二手单车</a>
                 <div class="thumbnail">
                   
-                  <a href="#"><img alt="" src="static/img/lychee.jpg"></a>
+                  <a href="#"><img alt="" src="static/img/bike.jpg"></a>
                   <div class="pricetag">
                     <span class="spiral"></span><a href="#" class="productde">商品详情</a>
                     <div class="price">
@@ -158,10 +158,10 @@
                 </div>
               </li>
               <li class="span3">
-                <a class="prdocutname" href="product.html">新鲜荔枝</a>
+                <a class="prdocutname" href="product.html">二手单车</a>
                 <div class="thumbnail">
                   
-                  <a href="#"><img alt="" src="static/img/lychee.jpg"></a>
+                  <a href="#"><img alt="" src="static/img/bike.jpg"></a>
                   <div class="pricetag">
                     <span class="spiral"></span><a href="#" class="productde">商品详情</a>
                     <div class="price">
@@ -199,10 +199,10 @@
                 </div>
               </li>
               <li class="span3">
-                <a class="prdocutname" href="product.html">新鲜荔枝</a>
+                <a class="prdocutname" href="product.html">二手单车</a>
                 <div class="thumbnail">
                   
-                  <a href="#"><img alt="" src="static/img/lychee.jpg"></a>
+                  <a href="#"><img alt="" src="static/img/bike.jpg"></a>
                   <div class="pricetag">
                     <span class="spiral"></span><a href="#" class="productde">商品详情</a>
                     <div class="price">

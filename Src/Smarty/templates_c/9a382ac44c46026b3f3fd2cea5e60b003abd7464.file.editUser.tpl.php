@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2015-07-18 17:47:26
+<?php /* Smarty version Smarty-3.1.21, created on 2015-07-25 10:02:20
          compiled from "D:\project\UMLproject\Smarty\templates\editUser.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20765557ce9aaaeea48-36505073%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9a382ac44c46026b3f3fd2cea5e60b003abd7464' => 
     array (
       0 => 'D:\\project\\UMLproject\\Smarty\\templates\\editUser.tpl',
-      1 => 1437212844,
+      1 => 1437789737,
       2 => 'file',
     ),
   ),
@@ -20,21 +20,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'user' => 0,
-    'email' => 0,
-    'telephone' => 0,
-    'QQ' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_557ce9aab499c5_81479215')) {function content_557ce9aab499c5_81479215($_smarty_tpl) {?><?php echo '<script'; ?>
- language="javascript" src="js/createxmlhttp.js"><?php echo '</script'; ?>
+ language="javascript" src="static/js/createxmlhttp.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- language="javascript" src="js/check.js"><?php echo '</script'; ?>
+ language="javascript" src="static/js/check.js"><?php echo '</script'; ?>
 >
 <body onLoad="javascript:register.name.focus()">
 <table width="450" border="0" align="center" cellpadding="0" cellspacing="0">
- <form id="register" name="register" action="editUser.php" method="post" onSubmit="return chkinput(this)">
+ <form id="register" name="register" action="userEdit.php" method="post" onSubmit="return chkinput(this)">
  	<tr>
     	<td colspan="5" align="center" valign="middle"><h2>更改<?php echo $_smarty_tpl->tpl_vars['user']->value;?>
 的个人信息</h2></td>
@@ -54,8 +51,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<tr>
       <td height="40"><div align="right">E-mail：</div></td>
       <td height="40" colspan="3">&nbsp;
-          <input id="email" type="text" name="email" value=<?php echo $_smarty_tpl->tpl_vars['email']->value;?>
- onBlur="javascript:chkemail(register)" onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'"/>&nbsp;<font color="#FFC0CB">*</font></td>
+          <input id="email" type="text" name="email" onBlur="javascript:chkemail(register)" onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'"/>&nbsp;<font color="#FFC0CB">*</font></td>
       <td height="40"><div id="email1"><font color="#999999">请输入Email</font></div></td>
     </tr>
 	
@@ -63,16 +59,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <tr>
       <td height="40"><div align="right">移动电话：</div></td>
       <td height="40" colspan="3">&nbsp;
-          <input id="tel" type="text" name="tel" value=<?php echo $_smarty_tpl->tpl_vars['telephone']->value;?>
- onBlur="javascript:chktel(register)" onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'"/></td>
+          <input id="tel" type="text" name="tel" onBlur="javascript:chktel(register)" onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'"/></td>
       <td height="40"><div id="tel1"><font color="#999999">请输入移动电话</font></div></td>
     </tr>
     
     <tr>
       <td height="40"><div align="right">QQ号码：</div></td>
       <td height="40" colspan="3">&nbsp;
-          <input id="qq" type="text" name="qq" value=<?php echo $_smarty_tpl->tpl_vars['QQ']->value;?>
-  onBlur="javascript:chkqq(register)" onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'"/></td>
+          <input id="qq" type="text" name="qq"  onBlur="javascript:chkqq(register)" onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'"/></td>
       <td height="40"><div id="qq1"><font color="#999999">请输入QQ号</font></div></td>
     </tr>
    

@@ -13,7 +13,7 @@
       </ul>
       <!-- Contact Us-->
 	   <form id="publishObject" name="publishObject"
-		    action="publishObject.php" method="post" enctype="multipart/form-data"> 
+		    action="objectPublish.php" method="post" enctype="multipart/form-data"> 
       <h1 class="heading1"><span class="maintext">发布</span><span class="subtext"> 发布新的物品</span></h1>
       <div class="row">
         <div class="span9">
@@ -57,13 +57,11 @@
 			<td><input type="text" class=""  value=""></td>
 			</tr>
 			<tr>
-			<th align="top"><label class="control-label" >上传图片    </label></th>
-			<td> 
-			 <input type="text" class=""  value="">
-			 </td>
-			 <td><input type = "file" name="loadpic">
-			 </br>
-			 <input type="submit" name="upload" value="上传"/> 
+			<th align="top"><label class="control-label" >上传图片    </label>
+			</th>
+			 <td><label class="control-label" >{$path}</label>
+			     <input type = "file" name="loadpic"></br>
+			     <input type="submit" name="upload" value="上传"/> 
 			</td>
 			只可上传jpg,bmp格式文件，上传图片以最后一个为准。
 			</tr>

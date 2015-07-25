@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2015-07-17 18:35:11
+<?php /* Smarty version Smarty-3.1.21, created on 2015-07-25 10:07:01
          compiled from "D:\project\UMLproject\Smarty\templates\register.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:18059557c4d076b77e1-72630162%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '09d1c7602ebff7b8708a64665e20867f92cbf3ef' => 
     array (
       0 => 'D:\\project\\UMLproject\\Smarty\\templates\\register.tpl',
-      1 => 1437129295,
+      1 => 1437790016,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_557c4d07717f28_66592396')) {function content_557c4d07717f28_66592396($_smarty_tpl) {?><?php echo '<script'; ?>
- language="javascript" src="js/createxmlhttp.js"><?php echo '</script'; ?>
+ language="javascript" src="static/js/createxmlhttp.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- language="javascript" src="js/check.js"><?php echo '</script'; ?>
+ language="javascript" src="static/js/check.js"><?php echo '</script'; ?>
 >
 <body onLoad="javascript:register.name.focus()">
 <table width="450" border="0" align="center" cellpadding="0" cellspacing="0">
- <form name="register" action="reg_chk.php" method="post" onSubmit="return chkinput(this)">
+ <form name="register" action="userRegisterChk.php" method="post" onSubmit="return chkinput(this)">
  	<tr>
     	<td colspan="5" align="center" valign="middle"><h2>新用户注册</h2></td>
     </tr>
@@ -52,7 +52,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <tr>
       <td height="40"><div align="right">E-mail：</div></td>
       <td height="40" colspan="3">&nbsp;
-          <input id="email" type="text" name="email" onBlur="javascript:chkemail(register)" onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'"/>&nbsp;<font color="#FF0066">*</font></td>
+          <input id="email" type="text" name="email" onChange="javascript:chkemail(register)" onMouseOver="this.style.backgroundColor='#ffffff'" onMouseOut="this.style.backgroundColor='#e8f4ff'"/>&nbsp;<font color="#FF0066">*</font></td>
       <td height="40"><div id="email1"><font color="#999999">请输入Email</font></div></td>
     </tr>
     <tr>

@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	include_once 'config.php';
-	echo "123123";
+	//echo "123123";
 	
 	if($_SESSION['member'] != "")
 	    $smarty->display('header.tpl');
@@ -14,7 +14,7 @@
 	   echo "<div class='row'>";
 	      echo "<aside class='span3 mt40'>";
 	       $smarty->display('category.tpl');
-           include 'newlist.php';
+           include 'objectNewlist.php';
 	       $smarty->display('newlist.tpl');
 		   
 		   echo "</aside>";

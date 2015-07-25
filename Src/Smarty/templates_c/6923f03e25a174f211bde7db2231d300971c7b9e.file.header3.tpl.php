@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2015-07-17 18:44:25
+<?php /* Smarty version Smarty-3.1.21, created on 2015-07-25 11:49:14
          compiled from "D:\project\UMLproject\Smarty\templates\header3.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2126055a8dc89c0d933-23326422%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6923f03e25a174f211bde7db2231d300971c7b9e' => 
     array (
       0 => 'D:\\project\\UMLproject\\Smarty\\templates\\header3.tpl',
-      1 => 1437129846,
+      1 => 1437793686,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21',
   'unifunc' => 'content_55a8dc89c4c143_57559637',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_55a8dc89c4c143_57559637')) {function content_55a8dc89c4c143_57559637($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
@@ -29,12 +29,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <meta name="author" content="">
 <link  rel='stylesheet' type='text/css'>
 <linkrel='stylesheet' type='text/css'>
-<linkrel='stylesheet' type='text/css'><link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/bootstrap-responsive.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/flexslider.css" type="text/css" media="screen" rel="stylesheet"  />
-<link href="css/jquery.fancybox.css" rel="stylesheet">
-<link href="css/cloud-zoom.css" rel="stylesheet">
+<linkrel='stylesheet' type='text/css'><link href="static/css/bootstrap.css" rel="stylesheet">
+<link href="static/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="static/css/style.css" rel="stylesheet">
+<link href="static/css/flexslider.css" type="text/css" media="screen" rel="stylesheet"  />
+<link href="static/css/jquery.fancybox.css" rel="stylesheet">
+<link href="static/css/cloud-zoom.css" rel="stylesheet">
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 </head>
@@ -44,7 +44,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="container">
       <div class="row">
         <div class="span12">
-          <a href="index-4.html" class="logo pull-left"><img src="img/bluelogo.jpg" alt="SimpleOne" title="SimpleOne"></a>
+          <a href="home.php" class="logo pull-left"><img src="static/img/bluelogo.jpg" alt="SimpleOne" title="SimpleOne"></a>
           <!-- Top Nav Start -->
           <div class="pull-left">
             <div class="navbar" id="topnav">
@@ -54,7 +54,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                   </li>
                   <li><a class="myaccount" href="index.php">登陆</a>
                   </li>
-				  <li><a class="checkout" href="register.php">注册</a>
+				  <li><a class="checkout" href="userRegister.php">注册</a>
                   </li>
                 </ul>
               </div>
@@ -62,7 +62,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
           </div>
           <!-- Top Nav End -->
           <div class="pull-right">
-			<form action="search.php" class="form-search top-search" method="post">
+			<form action="objectSearch.php" class="form-search top-search" method="post">
                <input name="searchbox" type="text" placeholder="请输入关键字" />
             </form>
           </div>

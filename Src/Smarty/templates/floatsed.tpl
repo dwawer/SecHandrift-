@@ -3,10 +3,10 @@
           <div class="flexslider" id="mainsliderside">
             <ul class="slides">
               <li>
-                <img src="img/product1a.jpg" alt="" />
+                <img src="static/img/product1a.jpg" alt="" />
               </li>
               <li>
-                <img src="img/product2a.jpg" alt="" />
+                <img src="static/img/product2a.jpg" alt="" />
               </li>
             </ul>
           </div>

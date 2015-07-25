@@ -4,7 +4,7 @@
     include_once 'class/Objlist.php';
 	include_once 'conn/conn.php';
     include_once 'redisConnect.php';
-	//include "ifLogin.php";
+	//include "userIfLogin.php";
 	
 	$search = $_POST['searchbox'];
 	$objname = "";
@@ -25,7 +25,7 @@
 		 $smarty->display('category.tpl');
 		   //$smarty->display('floatsed.tpl');
 		   //$smarty->display('floatdrift.tpl');
-		   include 'newlist.php';
+		   include 'objectNewlist.php';
 	       $smarty->display('newlist.tpl');
     echo "</aside>";
 	echo " <div class='span9'>          
@@ -48,7 +48,7 @@
 			$arr1 = $rst1->getArray();
 		    $objlist = new objlist(6,$page);
 		    $objlist->listInfo($arr1);
-		    $objlist->toPage();
+		   // $objlist->toPage();
 		
 	    
 		if($rst2->RecordCount() == 0){}

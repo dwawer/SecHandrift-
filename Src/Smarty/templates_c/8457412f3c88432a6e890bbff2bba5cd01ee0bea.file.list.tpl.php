@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2015-06-24 16:55:16
+<?php /* Smarty version Smarty-3.1.21, created on 2015-07-24 14:48:13
          compiled from "D:\project\UMLproject\Smarty\templates\list.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:301545580c2ae3b82e3-35154966%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8457412f3c88432a6e890bbff2bba5cd01ee0bea' => 
     array (
       0 => 'D:\\project\\UMLproject\\Smarty\\templates\\list.tpl',
-      1 => 1435136114,
+      1 => 1437720490,
       2 => 'file',
     ),
   ),
@@ -40,7 +40,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                   <a href="#"><img alt="" src="<?php echo $_smarty_tpl->tpl_vars['picpath']->value;?>
 "></a>
                   <div class="pricetag">
-                    <span class="spiral"></span><a href="showObject.php?id=<?php echo $_smarty_tpl->tpl_vars['oid']->value;?>
+                    <span class="spiral"></span><a href="objectShow.php?id=<?php echo $_smarty_tpl->tpl_vars['oid']->value;?>
 " class="productde">商品详情</a>
                     <div class="price">
                       <div class="pricenew">￥<?php echo $_smarty_tpl->tpl_vars['price']->value;?>
@@ -67,7 +67,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		 <td height="20"><div align="center"><img src="<?php echo $_smarty_tpl->tpl_vars['picpath']->value;?>
 " /></div></td>
 		 <td height="20"><div align="center">
-		      <a href="showObject.php?id=<?php echo $_smarty_tpl->tpl_vars['oid']->value;?>
+		      <a href="objectShow.php?id=<?php echo $_smarty_tpl->tpl_vars['oid']->value;?>
 "><input type="button" value="Go!"/></button>
 			  </a></div>
 		 </td>

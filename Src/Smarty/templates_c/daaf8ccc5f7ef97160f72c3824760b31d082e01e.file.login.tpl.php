@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2015-06-18 01:33:25
+<?php /* Smarty version Smarty-3.1.21, created on 2015-07-25 09:31:41
          compiled from "D:\project\UMLproject\Smarty\templates\login.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:23381557c26f23c1053-16134123%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'daaf8ccc5f7ef97160f72c3824760b31d082e01e' => 
     array (
       0 => 'D:\\project\\UMLproject\\Smarty\\templates\\login.tpl',
-      1 => 1434562310,
+      1 => 1437787831,
       2 => 'file',
     ),
   ),
@@ -37,7 +37,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <br/>
           </section>
         </div>
-		<form id="login" name="login" method="post" action="chkuser.php">
+		<form id="login" name="login" method="post" action="userLoginChk.php">
           <section class="returncustomer">
             <h2 class="heading2">登陆</h2>
             <div class="loginbox">
@@ -55,11 +55,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                       <input type="password"  name="password" type="password" class="span3">
                     </div>
                   </div>
-                  <a class="" href="resetPassword.php">忘记密码?</a>
+                  <a class="" href="userPasswordReset.php">忘记密码?</a>
                   <br>
                   <br>
                   <div align=right>
-                  <a href="register.php" class="btn btn-orange">注册</a>&nbsp;
+                  <a href="userRegister.php" class="btn btn-orange">注册</a>&nbsp;
                   <input id="enter"  class="btn btn-orange" name="enter" type="submit" value="登陆">
                 </div>
                 </fieldset>

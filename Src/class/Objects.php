@@ -30,7 +30,5 @@ class Objects
 	     $pubDate = $pubDate_;
 	     $price = $price_;
 	}
-	
-	
 }
 ?>

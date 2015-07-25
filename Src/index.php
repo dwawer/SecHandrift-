@@ -2,7 +2,7 @@
 	session_start();
 	include_once 'config.php';
 	
-	echo "123123";
+	//echo "123123";
 	//if($_SESSION['member'] == ""){
 		$smarty->display('header2.tpl');
 		$smarty->display('login.tpl');

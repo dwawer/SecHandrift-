@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2015-07-18 21:01:51
+<?php /* Smarty version Smarty-3.1.21, created on 2015-07-24 14:10:45
          compiled from "D:\project\UMLproject\Smarty\templates\header2.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:22394558166d4eae724-35946844%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '206795e4c7eb9ea50f03af29ff9240bdd8b8a78e' => 
     array (
       0 => 'D:\\project\\UMLproject\\Smarty\\templates\\header2.tpl',
-      1 => 1437224284,
+      1 => 1437717859,
       2 => 'file',
     ),
   ),
@@ -51,7 +51,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="container">
       <div class="row">
         <div class="span12">
-          <a href="index-2.html" class="logo pull-left"><img src="img/bluelogo.jpg" alt="SimpleOne" title="SimpleOne"></a>
+          <a href="index-2.html" class="logo pull-left"><img src="static/img/bluelogo.jpg" alt="SimpleOne" title="SimpleOne"></a>
           <!-- Top Nav Start -->
           <div class="pull-left">
             <div class="navbar" id="topnav">
@@ -61,7 +61,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                   </li>
                   <li><a class="shoppingcart" href="index.php">登录</a>
                   </li>
-                  <li><a class="checkout" href="register.php">注册</a>
+                  <li><a class="checkout" href="userRegister.php">注册</a>
                   </li>
                 </ul>
               </div>

@@ -23,7 +23,7 @@
     <div class="container">
       <div class="row">
         <div class="span12">
-          <a href="index-4.html" class="logo pull-left"><img src="img/bluelogo.jpg" alt="SimpleOne" title="SimpleOne"></a>
+          <a href="home.php" class="logo pull-left"><img src="static/img/bluelogo.jpg" alt="SimpleOne" title="SimpleOne"></a>
           <!-- Top Nav Start -->
           <div class="pull-left">
             <div class="navbar" id="topnav">
@@ -33,7 +33,7 @@
                   </li>
                   <li><a class="myaccount" href="index.php">登陆</a>
                   </li>
-				  <li><a class="checkout" href="register.php">注册</a>
+				  <li><a class="checkout" href="userRegister.php">注册</a>
                   </li>
                 </ul>
               </div>
@@ -41,7 +41,7 @@
           </div>
           <!-- Top Nav End -->
           <div class="pull-right">
-			<form action="search.php" class="form-search top-search" method="post">
+			<form action="objectSearch.php" class="form-search top-search" method="post">
                <input name="searchbox" type="text" placeholder="请输入关键字" />
             </form>
           </div>

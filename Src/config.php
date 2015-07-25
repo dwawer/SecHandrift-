@@ -17,6 +17,6 @@ $smarty->compile_dir = BASE_PATH.SMARTY_PATH.'templates_c/';
 $smarty->config_dir = BASE_PATH.SMARTY_PATH.'configs/';
 $smarty->cache_dir = BASE_PATH.SMARTY_PATH.'cache/';
 
-$defaultPic = "img/default.jpg";
+$defaultPic = "static/img/default.jpg";
 session_start();
 ?>

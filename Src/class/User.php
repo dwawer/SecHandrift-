@@ -6,11 +6,11 @@ class User
 {
 	//用户属性
 	var $username = "";
-	private $password;
-	private $QQ;
-	private $email;
-	private $telephone;
-	private $conn;
+	private $password = "";
+	private $QQ = "";
+	private $email = "";
+	private $telephon ="";
+	private $conn ="";
 	
 	
 	public function __construct($username_,$password_,$QQ_,$email_,$telephone_)
@@ -28,11 +28,15 @@ class User
 	}
 	function getQQ()
 	{
-		return $this->QQ;
+		if(isset($this->QQ))
+		    return $this->QQ;
+		else return "";
 	}
 	function getEmail()
 	{
-		return $this->email;
+		if(isset($this->email))
+		    return $this->email;
+		else return "";
 	}
 	function getTelephone()
 	{
@@ -66,7 +70,7 @@ class User
 	    	    $QQ_ = $rst->fields['QQ'];
 	    	    $email_ = $rst->fields['email'];
 	    	    $telephone_ = $rst->fields['telephone'];
-				echo "aaa".$username_."\n";
+				//echo "aaa".$username_."\n";
 			    return new User($username_,$password_,$QQ_,$email_,$telephone_);
 			} else {
 				return "PasswordError";
@@ -102,5 +106,51 @@ class User
         if ($rst->RecordCount() != 0) 
     		return "UsernameRepeat";
 		else return "UsernameOK";
+	}
+	
+	function checkEmailRepeat($email)
+	{
+		include 'conn/conn.php';
+		 
+		$sql = "select * from users where email='".$email."'";
+       
+   	    $rst = $conn->Execute($sql) or die('execute error');	
+
+        if ($rst->RecordCount() != 0) 
+    		return "<font color=#FF0066>邮箱已注册！</font>";
+		else return "<font color=green>恭喜您，邮箱可以使用!</font>";
+	}
+	
+	function getUserFromUsername($username_)
+	{
+	    include 'conn/conn.php';
+		
+		$sql = "select * from users where username='".$username_."'";
+       
+   	    $rst = $conn->Execute($sql) or die('execute error');	
+
+        if ($rst->RecordCount() == 1) {
+	    	$QQ_ = $rst->fields['QQ'];
+	    	$email_ = $rst->fields['email'];
+	    	$telephone_ = $rst->fields['telephone'];
+			$password_ = $rst->fields['password'];
+			return new User($username_,$password_,$QQ_,$email_,$telephone_);
+		} else {
+			return "UsernameError";
+		}
+	}
+	
+	function checkEmailUsername($username_ ,$email_)
+	{
+		include 'conn/conn.php';
+	
+        $sql = "select * from users where username='".$username_."' or email = '".$email_."'";
+   	    $rst = $conn->Execute($sql) or die('execute error');	
+
+        if ($rst->RecordCount() == 0) {
+			return true;
+		} else {
+			return false;
+		}		 
 	}
 }

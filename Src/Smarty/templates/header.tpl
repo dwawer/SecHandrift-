@@ -28,7 +28,7 @@
     <div class="container">
       <div class="row">
         <div class="span12">
-          <a href="index-4.html" class="logo pull-left"><img src="static/img/bluelogo.jpg" alt="SimpleOne" title="SimpleOne"></a>
+          <a href="home.php" class="logo pull-left"><img src="static/img/bluelogo.jpg" alt="SimpleOne" title="SimpleOne"></a>
           <!-- Top Nav Start -->
           <div class="pull-left">
             <div class="navbar" id="topnav">
@@ -38,7 +38,7 @@
                   </li>
                   <li><a class="myaccount" href="userCenter.php">个人中心</a>
                   </li>
-				  <li><a class="checkout" href="logout.php">登出</a>
+				  <li><a class="checkout" href="userLogout.php">登出</a>
                   </li>
                 </ul>
               </div>
@@ -46,7 +46,7 @@
           </div>
           <!-- Top Nav End -->
           <div class="pull-right">
-			<form action="search.php" class="form-search top-search" method="post">
+			<form action="objectSearch.php" class="form-search top-search" method="post">
                <input name="searchbox" type="text" placeholder="请输入关键字" />
             </form>
           </div>
@@ -67,15 +67,15 @@
       <nav class="subnav">
         <ul class="nav-pills categorymenu">
           <li><a class="active"  href="home.php">主页</a></li>
-          <li><a href="searchbytype.php?type=出售">二手</a></li>
-          <li><a href="searchbytype.php?type=漂流">漂流</a></li>
-          <li><a href="searchbyclass.php?class=图书">图书</a></li>
-          <li><a href="searchbyclass.php?class=女装">女装</a></li>
-          <li><a href="searchbyclass.php?class=男装">男装</a></li>  
-		  <li><a href="searchbyclass.php?class=单车">单车</a></li>		  
-          <li><a href="searchbyclass.php?class=数码">数码</a></li>
-		  <li><a href="searchbyclass.php?class=日用">家居日用</a></li>
-		  <li><a href="searchbyclass.php?class=家电">家用电器</a></li>
+          <li><a href="objectSearchByType.php?type=出售">二手</a></li>
+          <li><a href="objectSearchByType.php?type=漂流">漂流</a></li>
+          <li><a href="objectSearchByClass.php?class=图书">图书</a></li>
+          <li><a href="objectSearchByClass.php?class=女装">女装</a></li>
+          <li><a href="objectSearchByClass.php?class=男装">男装</a></li>  
+		  <li><a href="objectSearchByClass.php?class=单车">单车</a></li>		  
+          <li><a href="objectSearchByClass.php?class=数码">数码</a></li>
+		  <li><a href="objectSearchByClass.php?class=日用">家居日用</a></li>
+		  <li><a href="objectSearchByClass.php?class=家电">家用电器</a></li>
         </ul>
       </nav>
     </div>

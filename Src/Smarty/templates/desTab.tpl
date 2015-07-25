@@ -24,7 +24,7 @@
                     </div>
 			<section class="leavecomment">
                 
-               <form name="message" action="message.php?rec={$publisher}" method="post">
+               <form name="message" action="messageSubmit.php?id={$id}" method="post">
                     <div class="control-group">
                       <label class="control-label" >我要评论</label>
                       <div class="controls">

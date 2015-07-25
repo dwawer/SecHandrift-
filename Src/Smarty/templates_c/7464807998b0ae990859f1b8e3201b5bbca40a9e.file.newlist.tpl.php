@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2015-06-24 14:54:58
+<?php /* Smarty version Smarty-3.1.21, created on 2015-07-24 14:48:13
          compiled from "D:\project\UMLproject\Smarty\templates\newlist.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1679655813c05e56601-27491028%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7464807998b0ae990859f1b8e3201b5bbca40a9e' => 
     array (
       0 => 'D:\\project\\UMLproject\\Smarty\\templates\\newlist.tpl',
-      1 => 1435128896,
+      1 => 1437720485,
       2 => 'file',
     ),
   ),
@@ -43,7 +43,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
               <li>
                 <img width="50" height="50" src="<?php echo $_smarty_tpl->tpl_vars['picture1']->value;?>
 " alt="product" title="product">
-                <a class="productname" href="showObject.php?id=<?php echo $_smarty_tpl->tpl_vars['id1']->value;?>
+                <a class="productname" href="objectShow.php?id=<?php echo $_smarty_tpl->tpl_vars['id1']->value;?>
 "> <?php echo $_smarty_tpl->tpl_vars['name1']->value;?>
 </a>
                 <span class="procategory"><?php echo $_smarty_tpl->tpl_vars['class1']->value;?>
@@ -54,7 +54,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
               <li>
                 <img width="50" height="50" src="<?php echo $_smarty_tpl->tpl_vars['picture2']->value;?>
 " alt="product" title="product">
-                <a class="productname" href="showObject.php?id=<?php echo $_smarty_tpl->tpl_vars['id2']->value;?>
+                <a class="productname" href="objectShow.php?id=<?php echo $_smarty_tpl->tpl_vars['id2']->value;?>
 "><?php echo $_smarty_tpl->tpl_vars['name2']->value;?>
 </a>
                 <span class="procategory"><?php echo $_smarty_tpl->tpl_vars['class2']->value;?>
@@ -65,7 +65,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
               <li>
                 <img width="50" height="50" src="<?php echo $_smarty_tpl->tpl_vars['picture3']->value;?>
 " alt="product" title="product">
-                <a class="productname" href="showObject.php?id=<?php echo $_smarty_tpl->tpl_vars['id3']->value;?>
+                <a class="productname" href="objectShow.php?id=<?php echo $_smarty_tpl->tpl_vars['id3']->value;?>
 "> <?php echo $_smarty_tpl->tpl_vars['name3']->value;?>
 </a>
                 <span class="procategory"><?php echo $_smarty_tpl->tpl_vars['class3']->value;?>

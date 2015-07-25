@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2015-07-18 21:01:46
+<?php /* Smarty version Smarty-3.1.21, created on 2015-07-25 11:00:33
          compiled from "D:\project\UMLproject\Smarty\templates\table.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:205755813ce952abf1-28212011%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '8f38cc6989ddd650ee6e9d3185c7f1228a830736' => 
     array (
       0 => 'D:\\project\\UMLproject\\Smarty\\templates\\table.tpl',
-      1 => 1437224475,
+      1 => 1437793229,
       2 => 'file',
     ),
   ),
@@ -30,7 +30,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                   
                   <a href="#"><img alt="" src="static/img/keyboard.jpg"></a>
                   <div class="pricetag">
-                    <span class="spiral"></span><a href="#" class="productde">商品详情</a>
+                    <span class="spiral"></span><a href="objectShow.php?id=47" class="productde">商品详情</a>
                     <div class="price">
                       <div class="pricenew">￥19.90</div>
                       
@@ -44,7 +44,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                   
                   <a href="#"><img alt="" src="static/img/keyboard.jpg"></a>
                   <div class="pricetag">
-                    <span class="spiral"></span><a href="#" class="productde">商品详情</a>
+                    <span class="spiral"></span><a href="objectShow.php?id=47" class="productde">商品详情</a>
                     <div class="price">
                       <div class="pricenew">￥19.90</div>
                       
@@ -58,7 +58,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                  
                   <a href="#"><img alt="" src="static/img/keyboard.jpg"></a>
                   <div class="pricetag">
-                    <span class="spiral"></span><a href="#" class="productde">商品详情</a>
+                    <span class="spiral"></span><a href="objectShow.php?id=47" class="productde">商品详情</a>
                     <div class="price">
                       <div class="pricenew">￥19.90</div>
                       
@@ -72,7 +72,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                   
                   <a href="#"><img alt="" src="static/img/xiyiji.jpg"></a>
                   <div class="pricetag">
-                    <span class="spiral"></span><a href="#" class="productde">商品详情</a>
+                    <span class="spiral"></span><a href="objectShow.php?id=45" class="productde">商品详情</a>
                     <div class="price">
                       <div class="pricenew">￥100.00</div>
                       
@@ -81,10 +81,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 </div>
               </li>
               <li class="span3">
-                <a class="prdocutname" href="product.html">新鲜荔枝</a>
+                <a class="prdocutname" href="product.html">二手单车</a>
                 <div class="thumbnail">
                   
-                  <a href="#"><img alt="" src="static/img/lychee.jpg"></a>
+                  <a href="#"><img alt="" src="static/img/bike.jpg"></a>
                   <div class="pricetag">
                     <span class="spiral"></span><a href="#" class="productde">商品详情</a>
                     <div class="price">
@@ -94,10 +94,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 </div>
               </li>
               <li class="span3">
-                <a class="prdocutname" href="product.html">新鲜荔枝</a>
+                <a class="prdocutname" href="product.html">二手单车</a>
                 <div class="thumbnail">
                   
-                  <a href="#"><img alt="" src="static/img/lychee.jpg"></a>
+                  <a href="#"><img alt="" src="static/img/bike.jpg"></a>
                   <div class="pricetag">
                     <span class="spiral"></span><a href="#" class="productde">商品详情</a>
                     <div class="price">
@@ -179,10 +179,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 </div>
               </li>
               <li class="span3">
-                <a class="prdocutname" href="product.html">新鲜荔枝</a>
+                <a class="prdocutname" href="product.html">二手单车</a>
                 <div class="thumbnail">
                   
-                  <a href="#"><img alt="" src="static/img/lychee.jpg"></a>
+                  <a href="#"><img alt="" src="static/img/bike.jpg"></a>
                   <div class="pricetag">
                     <span class="spiral"></span><a href="#" class="productde">商品详情</a>
                     <div class="price">
@@ -220,10 +220,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 </div>
               </li>
               <li class="span3">
-                <a class="prdocutname" href="product.html">新鲜荔枝</a>
+                <a class="prdocutname" href="product.html">二手单车</a>
                 <div class="thumbnail">
                   
-                  <a href="#"><img alt="" src="static/img/lychee.jpg"></a>
+                  <a href="#"><img alt="" src="static/img/bike.jpg"></a>
                   <div class="pricetag">
                     <span class="spiral"></span><a href="#" class="productde">商品详情</a>
                     <div class="price">

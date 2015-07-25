@@ -4,7 +4,7 @@
 	include_once 'config.php';
 	include_once 'class/User.php';
 	include_once 'class/Objlist.php';
-	include "ifLogin.php";
+	include "userIfLogin.php";
  
 	$user = new User();
     $user = unserialize($_SESSION['member']);

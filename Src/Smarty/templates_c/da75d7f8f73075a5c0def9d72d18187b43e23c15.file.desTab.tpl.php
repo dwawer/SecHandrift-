@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21, created on 2015-06-23 19:44:39
+<?php /* Smarty version Smarty-3.1.21, created on 2015-07-24 16:45:50
          compiled from "D:\project\UMLproject\Smarty\templates\desTab.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2386255815ec6cb2d76-83115481%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'da75d7f8f73075a5c0def9d72d18187b43e23c15' => 
     array (
       0 => 'D:\\project\\UMLproject\\Smarty\\templates\\desTab.tpl',
-      1 => 1435059875,
+      1 => 1437727497,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'name' => 0,
     'description' => 0,
     'content' => 0,
-    'publisher' => 0,
+    'id' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -55,7 +55,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </div>
 			<section class="leavecomment">
                 
-               <form name="message" action="message.php?rec=<?php echo $_smarty_tpl->tpl_vars['publisher']->value;?>
+               <form name="message" action="messageSubmit.php?id=<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
 " method="post">
                     <div class="control-group">
                       <label class="control-label" >我要评论</label>

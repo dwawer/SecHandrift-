@@ -38,7 +38,7 @@
                   </li>
                   <li><a class="shoppingcart" href="index.php">登录</a>
                   </li>
-                  <li><a class="checkout" href="register.php">注册</a>
+                  <li><a class="checkout" href="userRegister.php">注册</a>
                   </li>
                 </ul>
               </div>

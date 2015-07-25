@@ -1,8 +1,8 @@
-﻿<script language="javascript" src="js/createxmlhttp.js"></script>
-<script language="javascript" src="js/check.js"></script>
+﻿<script language="javascript" src="static/js/createxmlhttp.js"></script>
+<script language="javascript" src="static/js/check.js"></script>
 <body onLoad="javascript:register.name.focus()">
 <table width="450" border="0" align="center" cellpadding="0" cellspacing="0">
- <form id="register" name="register" action="reg_chk.php" method="post" onSubmit="return chkinput(this)">
+ <form id="register" name="register" action="userRegisterChk.php" method="post" onSubmit="return chkinput(this)">
  	<tr>
     	<td colspan="5" align="center" valign="middle"><h2>新用户注册</h2></td>
     </tr>

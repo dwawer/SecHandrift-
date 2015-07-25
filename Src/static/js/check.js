@@ -7,9 +7,9 @@ function chkname(form){
 	}else{
 		//name1.innerHTML="链接reg_chk前";
 		var user = form.name.value;
-		var url = getRootPath() + "/reg_chk.php?user=" + user;
+		var url = getRootPath() + "/userRegisterChk.php?user=" + user;
 		var xmlhttp = new XMLHttpRequest();
-		name1.innerHTML=url;
+		//name1.innerHTML=url;
 		xmlhttp.open("GET",url,true);
 		//name1.innerHTML="链接reg_chk之后";
 		xmlhttp.onreadystatechange = function() {
@@ -31,6 +31,35 @@ function chkname(form){
 		xmlhttp.send(null);
 	}
 }
+
+function chkemail(form){
+	var i=form.email.value.indexOf("@");
+	var j=form.email.value.indexOf(".");
+	if(form.email.value == ""){
+		email1.innerHTML="<font color=#FF0066>请输入邮箱地址</font>"; 
+	}else if((form.email.value != "") && ((i<0)||(i-j>0)||(j<0))){
+		email1.innerHTML="<font color=#FF0066>请输入正确的E-mail地址！</font>"; 
+	}else{
+		email1.innerHTML="<font color=#FF0066>1231231</font>"; 
+		var email = form.email.value;
+		
+		var url = getRootPath() + "/userEmailChk.php?email=" + email;
+		email1.innerHTML="<font color=#FF0066>"+ url + "</font>"; 
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("GET",url,true);
+		xmlhttp.onreadystatechange = function() {
+		    if(xmlhttp.readyState == 4){
+				email1.innerHTML="444";
+				var msg2 = xmlhttp.responseText;
+				email1.innerHTML=msg2;
+
+			}
+		}
+		email1.innerHTML="555";
+		xmlhttp.send(null);
+	}
+}
+
 function chkinput(form){
 	if(form.name.value==""){
 		form.name.focus();
@@ -55,10 +84,6 @@ function chkinput(form){
 	}
 	if(form.email.value==""){
 		form.email.focus();
-		return false;
-	}
-	if(isNaN(form.email.value)){
-		form.email.select();
 		return false;
 	}
 	if(isNaN(form.qq.value)){
@@ -141,7 +166,7 @@ function chktel(form){
    
     if(isNaN(form.tel.value)){
 		tel1.innerHTML="<font color=#FF0066>联系电话只能由数字组成！</font>"; 
-	}else if(form.tel.value.length<8 || form.tel.value.length>11 || form.tel.value.length == 6){
+	}else if(form.tel.value.length != 0 && form.tel.value.length > 14){
 		tel1.innerHTML="<font color=#FF0066>联系电话位数不正确！</font>";
 	}else{
 		tel1.innerHTML="<font color=green>输入正确</font>";
@@ -152,17 +177,6 @@ function chkqq(form){
 		qq1.innerHTML="<font color=#FF0066>联系QQ只能由数字组成！</font>"; 
 	}else{
 		qq1.innerHTML="<font color=green>输入正确</font>";
-	}
-}
-function chkemail(form){
-	var i=form.email.value.indexOf("@");
-	var j=form.email.value.indexOf(".");
-	if(form.email.value == ""){
-		email1.innerHTML="<font color=#FF0066>请输入邮箱地址</font>"; 
-	}else if((form.email.value != "") && ((i<0)||(i-j>0)||(j<0))){
-		email1.innerHTML="<font color=#FF0066>请输入正确的E-mail地址！</font>"; 
-	}else{
-		email1.innerHTML="<font color=green>输入正确</font>";
 	}
 }
 
